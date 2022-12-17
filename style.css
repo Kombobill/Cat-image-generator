@@ -1,0 +1,33 @@
+body {
+    background:rgb(247, 240, 240);
+}
+
+.header- {
+    text-align: center;
+}
+
+.btn {
+    background: blue;
+    border: black;
+    background-color: rgb(17, 17, 17);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer; 
+}
+
+
+.cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.random_cats {
+    width: 40%;
+}
+
+img {
+    max-width: 700px;
+    height: 30rem;
+}
