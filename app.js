@@ -15,4 +15,13 @@ randomCatPhoto = (json) => {
     section.appendChild(image);
 };
 
-async function 
+async function getRandomCats() {
+    section.innerHTML = ""
+    try {
+        const response = await fetch(url)
+        const json = await response.json()
+        console.log('JSON:', json);
+        return randomCatPhoto(json)
+    } catch {} 
+    
+}
