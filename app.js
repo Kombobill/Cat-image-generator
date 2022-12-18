@@ -1,4 +1,4 @@
-const url = "https://api/cats?tags=tag1,tag2&skip=0&limit=10/search"
+const url = "https://cataas.com/cat?filter=sepia"
 const section = document.querySelector('.container')
 const button = document.querySelector('.btn')
 
