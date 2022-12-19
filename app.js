@@ -1,8 +1,8 @@
-const url = "https://cataas.com/cat?filter=sepia"
-const section = document.querySelector('.container')
-const button = document.querySelector('.btn')
+const url = "https://cataas.com/cat?filter=sepia/search";
+const section = document.querySelector('.container');
+const button = document.querySelector('.btn');
 
-button.addEventListener('click', getRandomCats);
+button.addEventListener("click", getRandomCats);
 
 randomCatPhoto = (json) => {
     let photo = json[0].url
@@ -22,6 +22,9 @@ async function getRandomCats() {
         const json = await response.json()
         console.log('JSON:', json);
         return randomCatPhoto(json)
-    } catch {} 
+    } catch {e} {
+        console.log("This is an error");
+        console.log(e);
+    } 
     
 }
