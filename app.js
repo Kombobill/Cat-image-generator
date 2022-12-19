@@ -1,4 +1,4 @@
-const url = "https://cataas.com/cat?filter=sepia/search";
+const url = "https://api.thecatapi.com/v1/images/search";
 const section = document.querySelector('.container');
 const button = document.querySelector('.btn');
 
@@ -28,3 +28,19 @@ async function getRandomCats() {
     } 
     
 }
+
+var post= document.getElementById("post");
+post.addEventListener("click", function(){
+    var commentBoxValue= document.getElementById("comment-box").value;
+ 
+    var li = document.createElement("li");
+    var text = document.createTextNode(commentBoxValue);
+    li.appendChild(text);
+    document.getElementById("unordered").appendChild(li);
+ 
+});
+
+
+
+
+
