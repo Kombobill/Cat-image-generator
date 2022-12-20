@@ -4,7 +4,7 @@ CAT-IMAGE-GENERATOR
 #PROJECT DESCRIPTION
 
 
-This is an app that generates random images of a cat for cat lovers.
+This is an app that generates random images of cats for cat lovers.
 
 #HOW TO INSTALL THE PROJECT
 
@@ -54,4 +54,4 @@ This project was contributed by;
 License
 
 
-[The project is licensed under ]
+[The project is licensed under MIT ]
