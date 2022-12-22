@@ -29,6 +29,7 @@ async function getRandomCats() {
     
 }
 
+
 var post= document.getElementById("post");
 post.addEventListener("click", function(){
     var commentBoxValue= document.getElementById("comment-box").value;
@@ -40,49 +41,29 @@ post.addEventListener("click", function(){
  
 });
 
-const likeBtn = document.querySelector(".like_btn");
-const likeIcon = document.querySelector("#icon");
-const count = document.querySelector("#count");
 
-
-let clicked = false;
-
-var el = document.getElementById('overlayBtn');
-if(el){
-  el.addEventListener('click', swapper, false);  
+const handleDisikeClick = () => {
+    if (activeBtn === "none") {
+      setDislikeCount(dislikeCount + 1);
+      setActiveBtn("dislike");
+      return;
     }
-    if(!clicked) {
-        clicked = true;
-        likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`;
-        count.textContent++;
-    }else {
-        clicked = false;
-        likeIcon.innerHTML = `i class="far fa-thumbs-up"></i>`;
-        count.textContent--;
+   
+    if (activeBtn === 'dislike'){
+      setDislikeCount(dislikeCount - 1);
+      setActiveBtn("none");
+      return;
     }
-  
-    
-    const dislikeBtn = document.querySelector(".dislike_btn");
-    const dislikeIcon = document.querySelector("#icon");
-    const add = document.querySelector("#add");
-
-
-    let reaction = false;
-
-
-    var el = document.getElementById('overlayBtn');
-if(el){
-  el.addEventListener('click', swapper, false);  
+ 
+    if (activeBtn === "like") {
+      setDislikeCount(dislikeCount + 1);
+      setLikeCount(likeCount - 1);
+      setActiveBtn("dislike");
     }
-    if(!reaction) {
-        reaction = true;
-        likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`;
-        count.textContent++;
-    }else {
-        reaction = false;
-        likeIcon.innerHTML = `i class="far fa-thumbs-up"></i>`;
-        count.textContent--;
-    }
+  };
+
+
+
 
 
 

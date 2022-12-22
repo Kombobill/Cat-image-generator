@@ -7,8 +7,7 @@
 
         <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        />
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <link rel="stylesheet" href="style.css">
     
@@ -29,17 +28,28 @@
                
            </ul>
 
-           <button class="like btn">
-            <span id="icon"><i class="far fa-thumbs-up"></i></span>
-            <span id="count">0</span>Like
+           <div className="container">
+            <div className="btn-container">
+              <button
+                className={`btn ${activeBtn === "like" ? "like-active" : ""}`}
+                onClick={handleLikeClick}
+              >
+                <span className="material-symbols-rounded">like</span>
+                
+              </button>
+           
+              <button
+                className={`btn ${activeBtn === "dislike" ? "dislike-active" : ""}`}
+                onClick={handleDisikeClick}
+              >
+                <span className="material-symbols-rounded">dislike</span>
+              
+              </button>
+            </div>
+          </div>;
+          
 
-
-            <button class="dislike btn">
-            <span id="icon"><i class="far fa-thumbs-up"></i></span>
-            <span id="count">0</span>Dislike
-    
-
-           </button>
+        
 
         
 

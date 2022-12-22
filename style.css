@@ -20,16 +20,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: 40%;
 }
 
 .random_cats {
-    width: 50%;
+    width: 80%;
 }
 
 img {
-    max-width: 700px;
-    height: 30rem;
+    max-width: 900px;
+    height: 50rem;
 }
 
 body {
@@ -45,47 +45,55 @@ body {
 }
 
 
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap")
 
 
 * {
-    margin: 0;
+    font-family: "Poppins", sans-serif;
     padding: 0;
-    box-sizing: border-box;
-}
-
-
-.like_btn {
-    padding: 10px 15px;
-    background: #0080ff;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
-
-* {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.dislike_btn {
-    padding: 5px 15px;
-    background: #0080ff;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
+  }
+   
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f1f3;
+  }
+   
+  .btn-container {
+    display: flex;
+    flex-direction: 'row';
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 12px;
+  }
+   
+  .btn {
     border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    color:rgb(8, 8, 8);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap:6px;
+    background-color: #e5e8ec;
+    border-radius: 4px;
+    padding: 6px 15px;
+    margin: 0 10px;
+  }
+   
+  .like-active {
+    background-color: #000000;
+  }
+   
+  .dislike-active {
+    background-color: #394350;
+  }
 
 
 
