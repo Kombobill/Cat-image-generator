@@ -47,8 +47,10 @@ const count = document.querySelector("#count");
 
 let clicked = false;
 
-
-likeBtn.addEventListener("click", () =>{
+var el = document.getElementById('overlayBtn');
+if(el){
+  el.addEventListener('click', swapper, false);  
+    }
     if(!clicked) {
         clicked = true;
         likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`;
@@ -58,7 +60,31 @@ likeBtn.addEventListener("click", () =>{
         likeIcon.innerHTML = `i class="far fa-thumbs-up"></i>`;
         count.textContent--;
     }
-});
+  
+    
+    const dislikeBtn = document.querySelector(".dislike_btn");
+    const dislikeIcon = document.querySelector("#icon");
+    const add = document.querySelector("#add");
+
+
+    let reaction = false;
+
+
+    var el = document.getElementById('overlayBtn');
+if(el){
+  el.addEventListener('click', swapper, false);  
+    }
+    if(!reaction) {
+        reaction = true;
+        likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`;
+        count.textContent++;
+    }else {
+        reaction = false;
+        likeIcon.innerHTML = `i class="far fa-thumbs-up"></i>`;
+        count.textContent--;
+    }
+
+
 
 
 
