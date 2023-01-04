@@ -7,7 +7,13 @@ CAT-IMAGE-GENERATOR
 This is an app that generates random images of cats for cat lovers.
 
 
-The images are being fetched from a public API known as TheCatApi
+The images are being fetched from a public API known as TheCatAPI
+
+
+API URL
+
+
+https://api.thecatapi.com/v1/images/search
 
 
 #HOW TO INSTALL THE PROJECT
