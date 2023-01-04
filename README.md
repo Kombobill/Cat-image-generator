@@ -59,7 +59,8 @@ This project was contributed by;
 
 
 [Billgates Kombo](https://github.com/Kombobill/Cat-image-generator)
-
+ 
+ link(kombobill.github.io/Cat-image-generator/)
 
 License
 
