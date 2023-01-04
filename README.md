@@ -13,7 +13,7 @@ The images are being fetched from a public API known as TheCatAPI
 API URL
 
 
-https://api.thecatapi.com/v1/images/search
+https://thecatapi.com
 
 
 #HOW TO INSTALL THE PROJECT
