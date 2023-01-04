@@ -48,8 +48,8 @@ Author
 This project was contributed by;
 
 
-[Billgates Kombo](https://github.com/Kombobill/Cat-image-generator)
-
+[Billgates Kombo]
+link(https://kombobill.github.io/Cat-image-generator/)
 
 License
 
