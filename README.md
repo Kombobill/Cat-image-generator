@@ -6,6 +6,10 @@ CAT-IMAGE-GENERATOR
 
 This is an app that generates random images of cats for cat lovers.
 
+
+The images are being fetched from a public API known as TheCatApi
+
+
 #HOW TO INSTALL THE PROJECT
 
 
@@ -48,8 +52,8 @@ Author
 This project was contributed by;
 
 
-[Billgates Kombo]
-link(https://kombobill.github.io/Cat-image-generator/)
+[Billgates Kombo](https://github.com/Kombobill/Cat-image-generator)
+
 
 License
 
